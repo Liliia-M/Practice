@@ -10,8 +10,12 @@ Console.WriteLine("Введите число: ");
 int numberB = int.Parse(Console.ReadLine());
 
 int max = -10;
+int min = 10;
 
 if (numberA > max) max = numberA;
 if (numberB > max) max = numberB;
+if (numberA < min) min = numberA;
+if (numberB < min) min = numberB;
 
-Console.WriteLine($"Результат = {max}");
+Console.WriteLine($"Максимальное число = {max}");
+Console.WriteLine($"Минимальное число = {min}");
